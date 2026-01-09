@@ -5,17 +5,18 @@ const Footer3 = ()=>{
 
     return (
         <>
-        <div className="w-full h-auto mx-auto relative">
-                <Image 
-                    className="w-full h-auto object-cover" 
-                    src="/assets/footerImage.jpg" 
-                    alt="Footer"
-                    width={1920}
-                    height={400}
-                    sizes="100vw"
-                    loading="lazy"
-                    priority={false}
-                />
+        <div className="w-full mx-auto relative">
+                <div className="relative w-full" style={{ aspectRatio: '1920/400', minHeight: '200px' }}>
+                    <Image 
+                        src="/assets/footerImage.jpg" 
+                        alt="Footer"
+                        fill
+                        className="object-cover"
+                        sizes="100vw"
+                        loading="lazy"
+                        priority={false}
+                    />
+                </div>
         </div>
         
         </>
