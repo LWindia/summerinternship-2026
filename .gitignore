@@ -28,7 +28,8 @@ yarn-error.log*
 # local env files
 .env*.local
 
-.env
+# .env - REMOVED FROM GITIGNORE TO PUSH CREDENTIALS (SECURITY RISK!)
+# .env
 
 # vercel
 .vercel
