@@ -1,4 +1,4 @@
 *.gif filter=lfs diff=lfs merge=lfs -text
 *.JPG filter=lfs diff=lfs merge=lfs -text
-# Hero image excluded from LFS for Vercel deployment
-!public/assets/Hero/hero-section2026.jpg
+# Exclude specific hero image from LFS
+public/assets/Hero/hero-section2026.jpg !filter !diff !merge -text

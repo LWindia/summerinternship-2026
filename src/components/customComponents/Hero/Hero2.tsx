@@ -108,6 +108,10 @@ const Hero2 = () => {
             className="object-cover"
             priority
             sizes="(max-width: 768px) 100vw, 66vw"
+            unoptimized={false}
+            onError={(e) => {
+              console.error('Hero image failed to load:', e);
+            }}
           />
         </div>
 
