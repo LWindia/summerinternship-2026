@@ -5,15 +5,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Poppins } from 'next/font/google';
-import Image1 from "../../../../../public/assets/Mentor/1.jpg";
-import Image2 from "../../../../../public/assets/Mentor/2.jpg";
-import tedx from "../../../../../public/assets/Mentor/tedx.jpg";
-import Image3 from "../../../../../public/assets/Mentor/3.jpg";
-import Image4 from "../../../../../public/assets/Mentor/Onemanarmy.jpg";
-import Image5 from "../../../../../public/assets/Mentor/TAlkofTown.jpg";
-import Image6 from "../../../../../public/assets/Mentor/techguru.jpg";
-import Image7 from "../../../../../public/assets/Mentor/TheO&O.jpg";
-import Image8 from "../../../../../public/assets/Mentor/thonlyone.jpg";
+// Image paths - using absolute paths from public folder
+const Image1 = "/assets/Mentor/1.jpg";
+const Image2 = "/assets/Mentor/2.jpg";
+const tedx = "/assets/Mentor/tedx.jpg";
+const Image3 = "/assets/Mentor/3.jpg";
+const Image4 = "/assets/Mentor/Onemanarmy.jpg";
+const Image5 = "/assets/Mentor/TAlkofTown.jpg";
+const Image6 = "/assets/Mentor/techguru.jpg";
+const Image7 = "/assets/Mentor/TheO&O.jpg";
+const Image8 = "/assets/Mentor/thonlyone.jpg";
 
 const poppins = Poppins({
    subsets: ['latin'],
@@ -84,47 +85,47 @@ export function MentorScroll() {
     {
       title: "Worked with Creators",
       description: "Closely worked associated with the Founders & Creators of technologies. So learn the right approach clear your myths with the right mentor",
-      imageUrl: Image1.src
+      imageUrl: Image1
     },
     {
       title: "The World Record Holder",
       description: "The One & Only in the World to achieve RedHat Certified Architect Level 25 with Enterprise Application Level 11",
-      imageUrl: Image2.src
+      imageUrl: Image2
     },
     {
       title: "Awarded as 1",
       description: "Applauded Globally for his contribution towards the Engineering Community for the last 21 years & popularly known as Tech Guru of India",
-      imageUrl: Image3.src
+      imageUrl: Image3
     },
     {
       title: "TedX Speaker",
       description: "First we have to create them, then Indian Engineering Students will be The Creator in technology space for our Nation",
-      imageUrl: tedx.src
+      imageUrl: tedx
     },
     {
       title: "One Man Army",
       description: "Learn,Implement,Research,Integrate & Showcase your Summer Product under thw Internationally Recogniosed Industry Expert - Mr Vimal Daga",
-      imageUrl: Image4.src
+      imageUrl: Image4
     },
     {
       title: "Talk of the Town",
       description: "Awarded & Recognised by all the Top Media Publications,News Channels,Top IT Magazines for serving the Engineering Youth Community.",
-      imageUrl: Image5.src
+      imageUrl: Image5
     },
     {
       title: "The World Record Holder",
       description: "The One & Only to achieve 11 AWS Global Certifications in just 11 days which ohterwise professionals take more than 5 years.",
-      imageUrl: Image7.src
+      imageUrl: Image7
     },
     {
       title: "The One & Only One in the World",
       description: "Popularly known as Integration Expert in IT Industry since he is the only one who has worked upon & knows to integrate maximum technologies.",
-      imageUrl: Image8.src
+      imageUrl: Image8
     },
     {
       title: "Tech Guru",
       description: "Sr Principal IT Consultant for fortune 500 Companies & trained Directors,CTOs,CIOs,Founders,Principal Architects,Team Leaders & many more.",
-      imageUrl: Image6.src
+      imageUrl: Image6
     }
   ];
 
