@@ -9,3 +9,6 @@ public/assets/media/*.jpeg !filter !diff !merge -text
 public/assets/media/*.png !filter !diff !merge -text
 public/assets/event-gallery/*.jpg !filter !diff !merge -text
 public/assets/event-gallery/*.jpeg !filter !diff !merge -text
+public/assets/Mentor/*.jpg !filter !diff !merge -text
+public/assets/flag.png !filter !diff !merge -text
+public/assets/logo2.webp !filter !diff !merge -text

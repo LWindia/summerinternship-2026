@@ -19,17 +19,7 @@ export default function Footer2() {
           Job Oriented Global :<span className="text-[#ff0000]">  DevOps Program </span>
           </h2>
           <p className="text-lg text-blue-400 mt-2 leading-relaxed text-cyan-400">
-          &quot;Making India 
-  <span>
-    <Image 
-      src="/assets/flag.png" 
-      alt="Indian Flag" 
-      width={20} 
-      height={14} 
-      style={{ display: 'inline-block', marginLeft: '4px', verticalAlign: 'middle' }} 
-    />
-   &nbsp; </span> 
-   Future Ready&quot;
+          &quot;Making India Future Ready&quot;
 </p>
 
 

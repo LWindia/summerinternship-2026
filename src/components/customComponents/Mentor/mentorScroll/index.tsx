@@ -221,14 +221,18 @@ export function MentorScroll() {
                     hovering={hoveringStates[index % originalCardData.length]}
                     setHovering={(isHovering) => handleHover(index % originalCardData.length, isHovering)}
                   >
-                    <div className="pb-[75%] w-full relative rounded-xl overflow-hidden">
+                    <div className="pb-[75%] w-full relative rounded-xl overflow-hidden bg-gray-800">
                       <Image
                         src={card.imageUrl}
                         alt={card.title}
                         fill
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        priority
-                        className="rounded-xl object-cover absolute top-0 left-0"
+                        priority={index < 3}
+                        className="rounded-xl object-cover"
+                        unoptimized={false}
+                        onError={(e) => {
+                          console.error(`Mentor image failed to load: ${card.imageUrl}`, e);
+                        }}
                       />
                     </div>
                   </Lens>
