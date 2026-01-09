@@ -100,8 +100,15 @@ const Hero2 = () => {
   return (
     <div className="h-full mx-auto w-full">
       <div className="hidden md:flex lg:flex w-full">
-        <div className="w-2/3">
-          <img className="w-full h-full object-cover" src="/assets/Hero/hero-section2026.jpg" alt="Hero" />
+        <div className="w-2/3 relative">
+          <Image 
+            src="/assets/Hero/hero-section2026.jpg" 
+            alt="Hero" 
+            width={1200} 
+            height={600} 
+            className="w-full h-full object-cover"
+            priority
+          />
         </div>
 
         <div className="w-1/3 flex items-center justify-center pr-8">
