@@ -220,20 +220,23 @@ const Hero2 = () => {
         </div>
       </div>
 
-      <div className="md:hidden lg:hidden sm:block">
-        <div className="mb-2 relative w-full h-[400px] min-h-[300px] overflow-hidden">
-          <Image 
-            src="/assets/Hero/hero-section2026.jpg" 
-            alt="Hero" 
-            fill
-            className="object-cover w-full h-full"
-            priority
-            sizes="100vw"
-            quality={90}
-            onError={(e) => {
-              console.error('Hero image failed to load on mobile:', e);
-            }}
-          />
+      <div className="md:hidden lg:hidden sm:block w-full overflow-x-hidden">
+        <div className="mb-2 relative w-full h-[500px] min-h-[400px] overflow-visible">
+          <div className="absolute inset-0 w-full h-full">
+            <Image 
+              src="/assets/Hero/hero-section2026.jpg" 
+              alt="Hero" 
+              fill
+              className="object-contain w-full h-full"
+              priority
+              sizes="100vw"
+              quality={90}
+              style={{ objectPosition: 'center' }}
+              onError={(e) => {
+                console.error('Hero image failed to load on mobile:', e);
+              }}
+            />
+          </div>
         </div>
       </div>
 
