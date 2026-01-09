@@ -33,6 +33,11 @@ export const metadata: Metadata = {
     shortcut: '/assets/logo2.webp',
     apple: '/assets/logo2.webp',
   },
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
 };
 
 export default function RootLayout({
