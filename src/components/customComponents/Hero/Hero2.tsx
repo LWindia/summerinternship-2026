@@ -221,7 +221,7 @@ const Hero2 = () => {
       </div>
 
       <div className="md:hidden lg:hidden sm:block w-full overflow-x-hidden px-0">
-        <div className="relative w-full h-[400px] min-h-[350px]">
+        <div className="relative w-full h-[350px] min-h-[300px]">
           <Image 
             src="/assets/Hero/hero-section2026.jpg" 
             alt="Hero" 
@@ -238,7 +238,7 @@ const Hero2 = () => {
         </div>
       </div>
 
-      <div className="relative md:-mt-12 lg:-mt-4 z-30 px-4 md:px-0 mt-4 md:mt-0">
+      <div className="relative md:-mt-12 lg:-mt-4 z-30 px-4 md:px-0 -mt-6 md:mt-0">
         <div className="bg-black rounded-lg p-5 md:p-8 shadow-lg max-w-6xl border-2 border-white mx-auto">
           <div className="flex flex-col lg:flex-row justify-between items-start gap-6">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 md:gap-6 w-full">
