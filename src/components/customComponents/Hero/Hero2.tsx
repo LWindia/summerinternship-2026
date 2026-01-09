@@ -221,7 +221,7 @@ const Hero2 = () => {
       </div>
 
       <div className="md:hidden lg:hidden sm:block">
-        <div className="mb-2 relative w-full h-[400px] min-h-[300px] overflow-hidden bg-black">
+        <div className="mb-2 relative w-full h-[400px] min-h-[300px] overflow-hidden">
           <Image 
             src="/assets/Hero/hero-section2026.jpg" 
             alt="Hero" 
@@ -234,22 +234,6 @@ const Hero2 = () => {
               console.error('Hero image failed to load on mobile:', e);
             }}
           />
-          {/* Text Overlay for Mobile */}
-          <div className="absolute inset-0 flex flex-col justify-center items-start px-4 sm:px-6 z-10 bg-gradient-to-r from-black/70 via-black/50 to-transparent">
-            <div className="space-y-2 sm:space-y-3 max-w-full">
-              <h1 className="text-2xl sm:text-3xl font-bold text-white leading-tight break-words">
-                Summer Internship Industrial Training Program 2026
-              </h1>
-              <p className="text-base sm:text-lg text-white font-medium break-words">
-                Exclusively for Engineering Students
-              </p>
-              <div className="bg-white/90 px-3 py-2 rounded-md inline-block mt-2">
-                <p className="text-xs sm:text-sm text-black font-semibold break-words">
-                  Open for BTech | MTech | BCA | MCA | BSc IT
-                </p>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
