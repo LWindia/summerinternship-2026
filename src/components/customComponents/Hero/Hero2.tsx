@@ -100,14 +100,14 @@ const Hero2 = () => {
   return (
     <div className="h-full mx-auto w-full">
       <div className="hidden md:flex lg:flex w-full">
-        <div className="w-2/3 relative">
+        <div className="w-2/3 relative h-[600px] min-h-[500px]">
           <Image 
             src="/assets/Hero/hero-section2026.jpg" 
             alt="Hero" 
-            width={1200} 
-            height={600} 
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
             priority
+            sizes="(max-width: 768px) 100vw, 66vw"
           />
         </div>
 
@@ -217,8 +217,15 @@ const Hero2 = () => {
       </div>
 
       <div className="grid grid-row-2 md:hidden lg:hidden sm:block">
-        <div className="mb-2 relative w-full h-auto">
-          <Image src="/assets/Hero/hero-section2026.jpg" alt="Hero" width={1200} height={600} className="w-full h-auto" />
+        <div className="mb-2 relative w-full h-[400px] min-h-[300px]">
+          <Image 
+            src="/assets/Hero/hero-section2026.jpg" 
+            alt="Hero" 
+            fill
+            className="object-cover"
+            priority
+            sizes="100vw"
+          />
         </div>
       </div>
 
