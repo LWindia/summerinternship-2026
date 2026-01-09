@@ -1,6 +1,7 @@
 
-import hash13 from "../../../public/assets/logo2.webp";
-import lwlogo from "../../../public/assets/logo2.webp";
+// Logo paths - using absolute paths from public folder
+const hash13 = "/assets/logo2.webp";
+const lwlogo = "/assets/logo2.webp";
 import { FaLinkedin, FaInstagram, FaYoutube, FaFacebook, FaTwitter } from "react-icons/fa";
 import Image from "next/image"
 
@@ -35,11 +36,11 @@ export default function Footer2() {
           <p className="text-sm text-gray-400 font-italic mt-6">Powered By:</p>
           {/* Logos */}
           <div className="mt-4 flex gap-4 mx-auto">
-          <span>  <Image src={lwlogo.src.toString()} width={110} height={48} alt="Logo" /></span>
+          <span>  <Image src={lwlogo} width={110} height={48} alt="Logo" /></span>
             <div className="flex items-center justify-center">
               <span className="text-4xl text-[#ff0000]" style={{ height: '80px', borderLeft: '2px solid #ff0000' }}></span> {/* Pipe with larger height */}
             </div>
-           <span> <Image src={hash13.src.toString()} width={96} height={48} alt="Logo" /></span>
+           <span> <Image src={hash13} width={96} height={48} alt="Logo" /></span>
           </div>
         
 

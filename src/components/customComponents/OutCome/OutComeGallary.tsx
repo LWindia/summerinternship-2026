@@ -4,15 +4,16 @@
 import { useEffect, useState, useRef, useCallback } from "react";
 import Image from "next/image";
 import { cn } from "@/lib/utils"; // Helper for conditional classes
-import Event1Image from "../../../../public/assets/Jazbaa/JAZBAA 1.jpg";
-import Event2Image from "../../../../public/assets/Jazbaa/JAZBAA 20.jpg";
-import Event3Image from "../../../../public/assets/Jazbaa/JAZBAA 3.jpg";
-import Event4Image from "../../../../public/assets/Jazbaa/JAZBAA 19.jpg";
-import Event5Image from "../../../../public/assets/Jazbaa/JAZBAA 16.jpg";
-import Event6Image from "../../../../public/assets/Jazbaa/JAZBAA 6.jpg";
-import Event7Image from "../../../../public/assets/Jazbaa/JAZBAA 7.jpg";
-import Event8Image from "../../../../public/assets/Jazbaa/JAZBAA 8.jpg";
-import Event9Image from "../../../../public/assets/Jazbaa/JAZBAA 13.jpg";
+// Image paths - using absolute paths from public folder
+const Event1Image = "/assets/Jazbaa/JAZBAA 1.jpg";
+const Event2Image = "/assets/Jazbaa/JAZBAA 20.jpg";
+const Event3Image = "/assets/Jazbaa/JAZBAA 3.jpg";
+const Event4Image = "/assets/Jazbaa/JAZBAA 19.jpg";
+const Event5Image = "/assets/Jazbaa/JAZBAA 16.jpg";
+const Event6Image = "/assets/Jazbaa/JAZBAA 6.jpg";
+const Event7Image = "/assets/Jazbaa/JAZBAA 7.jpg";
+const Event8Image = "/assets/Jazbaa/JAZBAA 8.jpg";
+const Event9Image = "/assets/Jazbaa/JAZBAA 13.jpg";
 
 // Define your image type and data array for gallery images
 interface ImageData {
@@ -21,15 +22,15 @@ interface ImageData {
 }
 
 const galleryImages: ImageData[] = [
-  { src: Event1Image.src, alt: "Gallery Image 1" },
-  { src: Event2Image.src, alt: "Gallery Image 2" },
-  { src: Event3Image.src, alt: "Gallery Image 3" },
-  { src: Event4Image.src, alt: "Gallery Image 4" },
-  { src: Event5Image.src, alt: "Gallery Image 5" },
-  { src: Event6Image.src, alt: "Gallery Image 6" },
-  { src: Event7Image.src, alt: "Gallery Image 7" },
-  { src: Event8Image.src, alt: "Gallery Image 8" },
-  { src: Event9Image.src, alt: "Gallery Image 9" },
+  { src: Event1Image, alt: "Gallery Image 1" },
+  { src: Event2Image, alt: "Gallery Image 2" },
+  { src: Event3Image, alt: "Gallery Image 3" },
+  { src: Event4Image, alt: "Gallery Image 4" },
+  { src: Event5Image, alt: "Gallery Image 5" },
+  { src: Event6Image, alt: "Gallery Image 6" },
+  { src: Event7Image, alt: "Gallery Image 7" },
+  { src: Event8Image, alt: "Gallery Image 8" },
+  { src: Event9Image, alt: "Gallery Image 9" },
 ];
 
 export default function OutComeGallary() {

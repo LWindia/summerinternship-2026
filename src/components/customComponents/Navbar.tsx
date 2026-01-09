@@ -4,7 +4,6 @@ import React, { useState, useEffect, useRef } from "react";
 import { List, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import LOGO from "../../../public/assets/logo2.webp";
 import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link'; // Import Link from next/link
@@ -108,7 +107,7 @@ const Navbar: React.FC = () => {
         {/* Logo */}
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src={LOGO}
+            src="/assets/logo2.webp"
             alt="Logo"
             width={96}
             height={18}

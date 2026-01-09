@@ -1,18 +1,19 @@
 import React from "react";
 import Image from "next/image";
-import arpitJindal from "../../../../../public/assets/placed-students-photos/arpitjindal.png";
-import akanshAgarwal from "../../../../../public/assets/placed-students-photos/akanshagarwal.png";
-import mannansiddiqui from "../../../../../public/assets/placed-students-photos/mannansiddhiqui.png";
+// Image paths - using absolute paths from public folder
+const arpitJindal = "/assets/placed-students-photos/arpitjindal.png";
+const akanshAgarwal = "/assets/placed-students-photos/akanshagarwal.png";
+const mannansiddiqui = "/assets/placed-students-photos/mannansiddhiqui.png";
 
-import unthinkable from "../../../../../public/assets/internshiplogo/logo_unthinkable_dbd9877981.png";
-import mercedes from "../../../../../public/assets/internshiplogo/Mercedes-Benz_Logo_2010.svg.png";
-import NPCI from "../../../../../public/assets/internshiplogo/NPCI_logo.png";
-import quantiphi from "../../../../../public/assets/internshiplogo/quantfi.png";
-import peerxp from "../../../../../public/assets/internshiplogo/peerXp-Photoroom.png";
-import paytm2 from "../../../../../public/assets/companyLogo/paytm.png"
-import searce2 from "../../../../../public/assets/companyLogo/searce.png"
-import redhat2 from "../../../../../public/assets/companyLogo/redhat.png"
-import tcs2 from "../../../../../public/assets/companyLogo/tcs.png"
+const unthinkable = "/assets/internshiplogo/logo_unthinkable_dbd9877981.png";
+const mercedes = "/assets/internshiplogo/Mercedes-Benz_Logo_2010.svg.png";
+const NPCI = "/assets/internshiplogo/NPCI_logo.png";
+const quantiphi = "/assets/internshiplogo/quantfi.png";
+const peerxp = "/assets/internshiplogo/peerXp-Photoroom.png";
+const paytm2 = "/assets/companyLogo/paytm.png";
+const searce2 = "/assets/companyLogo/searce.png";
+const redhat2 = "/assets/companyLogo/redhat.png";
+const tcs2 = "/assets/companyLogo/tcs.png";
 
 
 const InitPlacement = () => {
@@ -22,8 +23,8 @@ const InitPlacement = () => {
           college: "VIT Vellore",
           designation: "DevOps Consultant",
           package: "12 LPA",
-          companyLogo: mercedes.src.toString(),
-          photo: arpitJindal.src.toString(), // Image path
+          companyLogo: mercedes,
+          photo: arpitJindal, // Image path
           linkding:"https://www.linkedin.com/in/arpit-jindal-1b52831a3/"
         },
         {
@@ -31,8 +32,8 @@ const InitPlacement = () => {
           college: "Shri Ram Murti Smarak College, Bareilly",
           designation: "Framework Engineer",
           package: "8.5 LPA",
-          companyLogo: quantiphi.src.toString(),
-          photo: akanshAgarwal.src.toString(), // Image path  
+          companyLogo: quantiphi,
+          photo: akanshAgarwal, // Image path  
           linkding:"https://www.linkedin.com/in/akansh-agarwal/"
             },
 
@@ -41,8 +42,8 @@ const InitPlacement = () => {
           college: "Gautam Buddha University Uttar Pradesh",
           designation: "Associate MLOPS Engineer",
           package: "9.4 LPA",
-          companyLogo: NPCI.src.toString(),
-          photo: mannansiddiqui.src.toString(),
+          companyLogo: NPCI,
+          photo: mannansiddiqui,
           linkding:"https://www.linkedin.com/in/mannansiddiqui/" // Image path
         },
         

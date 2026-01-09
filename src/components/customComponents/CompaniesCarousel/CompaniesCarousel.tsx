@@ -5,41 +5,42 @@ import { OurAlumniWorksAtCarousel } from "../../ui2/OurAlumniWorksAtCarousel";
 
 // Company logos imports
 
-import Google from "../../../../public/assets/companyLogo/google.png";
-import TCS from "../../../../public/assets/companyLogo/tcs.png";
-import Infosys from "../../../../public/assets/companyLogo/infosys.png";
-import Salesforce from "../../../../public/assets/companyLogo/salesforce.png";
-import Intel from "../../../../public/assets/companyLogo/intel.png";
-import RedHat from "../../../../public/assets/companyLogo/redhat.png";
-import Razorpay from "../../../../public/assets/companyLogo/razorpay.png";
-import Wipro from "../../../../public/assets/companyLogo/wipro.png";
-import Zoho from "../../../../public/assets/companyLogo/zoho.png";
-import Oracle from "../../../../public/assets/companyLogo/oracle.png";
-import Searce from "../../../../public/assets/companyLogo/searce.png";
-import Syfe from "../../../../public/assets/companyLogo/syfe.png";
-import Paytm from "../../../../public/assets/companyLogo/paytm.png";
-import PWC from "../../../../public/assets/companyLogo/pwc.png";
-import Nykaa from "../../../../public/assets/companyLogo/nykaa.png";
-import NPCI from "../../../../public/assets/companyLogo/NPCI_logo.png";
-import Accenture from "../../../../public/assets/companyLogo/accenture.png";
-import JPMorgan from "../../../../public/assets/companyLogo/jpmorgan.png";
-import Microsoft from "../../../../public/assets/companyLogo/microsoft.png";
-import Deloitte from "../../../../public/assets/companyLogo/deloitte.png";
-import Dell from "../../../../public/assets/companyLogo/dell.png";
-import IBM from "../../../../public/assets/companyLogo/ibm.png";
-import pinkcompany from "../../../../public/assets/companyLogo/36.png";
-import Mercedece from "../../../../public/assets/companyLogo/Mercedes-Benz_Logo_2010.svg.png";
-import Tesco from "../../../../public/assets/companyLogo/tesco.png";
-import Airtel from "../../../../public/assets/companyLogo/airtel.png";
-import Allianz from "../../../../public/assets/companyLogo/allianz.png";
-import BankOfAmerica from "../../../../public/assets/companyLogo/bankofamerica.png";
-import BigBasket from "../../../../public/assets/companyLogo/bigbasket.png";
-import BluePlanet from "../../../../public/assets/companyLogo/blueplanet.png";
-import Capgemini from "../../../../public/assets/companyLogo/capgemini.png";
-import shyenaTech from "../../../../public/assets/companyLogo/shyenaTechLogo.png";
-import quantifi from "../../../../public/assets/companyLogo/quantfi.png";
-import peerxp from "../../../../public/assets/companyLogo/peerXp-Photoroom.png";
-import unthinkable from "../../../../public/assets/companyLogo/logo_unthinkable_dbd9877981.png"
+// Company logo paths - using absolute paths from public folder
+const Google = "/assets/companyLogo/google.png";
+const TCS = "/assets/companyLogo/tcs.png";
+const Infosys = "/assets/companyLogo/infosys.png";
+const Salesforce = "/assets/companyLogo/salesforce.png";
+const Intel = "/assets/companyLogo/intel.png";
+const RedHat = "/assets/companyLogo/redhat.png";
+const Razorpay = "/assets/companyLogo/razorpay.png";
+const Wipro = "/assets/companyLogo/wipro.png";
+const Zoho = "/assets/companyLogo/zoho.png";
+const Oracle = "/assets/companyLogo/oracle.png";
+const Searce = "/assets/companyLogo/searce.png";
+const Syfe = "/assets/companyLogo/syfe.png";
+const Paytm = "/assets/companyLogo/paytm.png";
+const PWC = "/assets/companyLogo/pwc.png";
+const Nykaa = "/assets/companyLogo/nykaa.png";
+const NPCI = "/assets/companyLogo/NPCI_logo.png";
+const Accenture = "/assets/companyLogo/accenture.png";
+const JPMorgan = "/assets/companyLogo/jpmorgan.png";
+const Microsoft = "/assets/companyLogo/microsoft.png";
+const Deloitte = "/assets/companyLogo/deloitte.png";
+const Dell = "/assets/companyLogo/dell.png";
+const IBM = "/assets/companyLogo/ibm.png";
+const pinkcompany = "/assets/companyLogo/36.png";
+const Mercedece = "/assets/companyLogo/Mercedes-Benz_Logo_2010.svg.png";
+const Tesco = "/assets/companyLogo/tesco.png";
+const Airtel = "/assets/companyLogo/airtel.png";
+const Allianz = "/assets/companyLogo/allianz.png";
+const BankOfAmerica = "/assets/companyLogo/bankofamerica.png";
+const BigBasket = "/assets/companyLogo/bigbasket.png";
+const BluePlanet = "/assets/companyLogo/blueplanet.png";
+const Capgemini = "/assets/companyLogo/capgemini.png";
+const shyenaTech = "/assets/companyLogo/shyenaTechLogo.png";
+const quantifi = "/assets/companyLogo/quantfi.png";
+const peerxp = "/assets/companyLogo/peerXp-Photoroom.png";
+const unthinkable = "/assets/companyLogo/logo_unthinkable_dbd9877981.png";
 
 import localFont from "next/font/local";
 const khandFont = localFont(
@@ -88,43 +89,43 @@ export function LeftRightAlumniCarousel() {
 }
 
 const companiesRow1 = [
-  { image: Google.src },
-  { image: BigBasket.src },
-  { image: Microsoft.src },
-  { image: IBM.src },
-  { image: TCS.src },
-  { image: Infosys.src },
-  { image: Salesforce.src },
-  { image: Intel.src },
-  { image: RedHat.src },
-  { image: PWC.src },
-  { image: peerxp.src },
-  { image: Wipro.src },
-  { image: Zoho.src },
-  { image: Oracle.src },
-  { image: Searce.src },
-  { image: Syfe.src },
-  { image: Paytm.src },
-  { image: JPMorgan.src },
+  { image: Google },
+  { image: BigBasket },
+  { image: Microsoft },
+  { image: IBM },
+  { image: TCS },
+  { image: Infosys },
+  { image: Salesforce },
+  { image: Intel },
+  { image: RedHat },
+  { image: PWC },
+  { image: peerxp },
+  { image: Wipro },
+  { image: Zoho },
+  { image: Oracle },
+  { image: Searce },
+  { image: Syfe },
+  { image: Paytm },
+  { image: JPMorgan },
 ];
 
 const companiesRow2 = [
-  { image: Accenture.src },
-  { image: Capgemini.src },
-  { image: Nykaa.src },
-  { image: NPCI.src },
-  { image: Accenture.src },
-  { image: unthinkable.src },
-  { image: Razorpay.src },
-  { image: Deloitte.src },
-  { image: Dell.src },
-  { image: pinkcompany.src },
-  { image: Mercedece.src },
-  { image: Tesco.src },
-  { image: Airtel.src },
-  { image: Allianz.src },
-  { image: BankOfAmerica.src },
-  { image: quantifi.src },
-  { image: BluePlanet.src },
-  { image: shyenaTech.src },
+  { image: Accenture },
+  { image: Capgemini },
+  { image: Nykaa },
+  { image: NPCI },
+  { image: Accenture },
+  { image: unthinkable },
+  { image: Razorpay },
+  { image: Deloitte },
+  { image: Dell },
+  { image: pinkcompany },
+  { image: Mercedece },
+  { image: Tesco },
+  { image: Airtel },
+  { image: Allianz },
+  { image: BankOfAmerica },
+  { image: quantifi },
+  { image: BluePlanet },
+  { image: shyenaTech },
 ];
