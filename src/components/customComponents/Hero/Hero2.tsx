@@ -226,10 +226,10 @@ const Hero2 = () => {
             src="/assets/Hero/hero-section2026.jpg" 
             alt="Hero" 
             fill
-            className="object-cover"
+            className="object-cover w-full h-full"
             priority
             sizes="100vw"
-            unoptimized={false}
+            quality={90}
             onError={(e) => {
               console.error('Hero image failed to load on mobile:', e);
             }}
