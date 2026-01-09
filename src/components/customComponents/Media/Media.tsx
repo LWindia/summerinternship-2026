@@ -98,10 +98,15 @@ export default function MediaSection() {
                   touch-manipulation"
               >
                 {/* Background Image */}
-                <div
-                  className="absolute inset-0 bg-cover  transition-transform duration-300 group-hover:scale-110"
-                  style={{ backgroundImage: `url(${media.backgroundImage})` }}
-                />
+                <div className="absolute inset-0 overflow-hidden">
+                  <Image
+                    src={media.backgroundImage}
+                    alt="Media recognition"
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-110"
+                    sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                  />
+                </div>
                 
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-black/50 group-hover:bg-black/40 transition-all duration-300" />

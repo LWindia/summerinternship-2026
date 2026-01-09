@@ -2,6 +2,7 @@
 import { Card } from "@/components/ui/card";
 import { Play, ChevronLeft, ChevronRight } from "lucide-react";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 interface VideoCardProps {
   title: string;
@@ -70,7 +71,7 @@ export default function VideoTestimonials() {
   const VideoCard = ({ video, index }: { video: VideoCardProps; index: number }) => (
     <Card
       key={index}
-      className={`relative rounded-xl cursor-pointer transition-all duration-300 ease-in-out ${
+      className={`relative rounded-xl cursor-pointer transition-all duration-300 ease-in-out overflow-hidden ${
         isMobile 
           ? "w-full h-[450px]"
           : hoveredIndex === index 
@@ -81,23 +82,28 @@ export default function VideoTestimonials() {
       onMouseLeave={() => !isMobile && setHoveredIndex(0)}
       onClick={() => window.open(video.videoUrl, "_blank")}
     >
-      <img
-        src={video.thumbnail}
-        alt={video.title}
-        className="w-full h-full object-cover rounded-xl"
-      />
+      <div className="relative w-full h-full">
+        <Image
+          src={video.thumbnail}
+          alt={video.title}
+          fill
+          className="object-cover rounded-xl"
+          sizes="(max-width: 768px) 100vw, 200px"
+          priority={index === 0}
+        />
       
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70 rounded-xl" />
-      
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-        <div className="bg-white/90 p-4 rounded-full hover:bg-white hover:scale-110 transition-transform">
-          <Play className="w-6 h-6 fill-foreground/90" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/70 rounded-xl" />
+        
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+          <div className="bg-white/90 p-4 rounded-full hover:bg-white hover:scale-110 transition-transform">
+            <Play className="w-6 h-6 fill-foreground/90" />
+          </div>
         </div>
+        
+        <p className="absolute bottom-4 left-4 right-4 text-white font-medium text-sm line-clamp-3">
+          {video.title}
+        </p>
       </div>
-      
-      <p className="absolute bottom-4 left-4 right-4 text-white font-medium text-sm line-clamp-3">
-        {video.title}
-      </p>
     </Card>
   );
 
